@@ -4,6 +4,6 @@
     <dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-loadbalancer</artifactId>
-		</dependency>
+	</dependency>
 5. Then change the port of the service whose jar is created and run that service from inttlj. Then we have 2 instances of the same service.
 6. Since we have  registered the other microservices with their names. So instead of hard coding the URL of microservices in feign client use their name eg.) @FeignClient(name = "PASSENGER-SERVICE")
